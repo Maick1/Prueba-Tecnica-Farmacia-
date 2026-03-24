@@ -63,8 +63,6 @@ assert (
     "dividir entre cero" in error_text
 ), f"Error inesperado: {error}"
 driver.find_element_by_accessibility_id("clearButton").click()
-
-    
 time.sleep(2)
 #---------------------------------------------------------------------
 ### 8. Provocar nuevo error: Realizar 6 / 0 =
@@ -75,7 +73,8 @@ driver.find_element_by_accessibility_id("equalButton").click()
 
 resultado2 = driver.find_element_by_accessibility_id("CalculatorResults").text
 print("Resultado 2:", resultado2)
-
+driver.find_element_by_accessibility_id("clearButton").click()
+time.sleep(2)
 #guardo captura de pantalla de la prueba realizada
 driver.save_screenshot("evidencia.png")
 
