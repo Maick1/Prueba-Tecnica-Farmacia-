@@ -1,0 +1,17 @@
+paso para ejecutar:
+1. Tener instalado python.
+2. instalar WinAppDriver se encuentra el archivo de instalación dentro del proyecto.
+
+3.una vez instalado levantarlo en el CMD abrir ruta (C:\Program Files (x86)\Windows Application Driver) y ejecutar (WinAppDriver.exe) si todo esta ok en el cmd se podrá ver un listening for request  at: http://127.0.0.1:4723/, nuestro interlocutor 
+
+4.clonar repositorio:
+
+5. crear env: python -m venv venv
+venv\Scripts\activate
+
+4. instalar librerías necesaria:
+ - pip show selenium
+ -pip show Appium-Python-Client
+ -pip show urllib3
+
+5. ejecutar: python script.py
